@@ -10,6 +10,17 @@ GSAP + ScrollTrigger + SplitText, Lenis and Motion. Every page is statically gen
 > **Concept footage: replace with real drone footage before launch.** The hero flight is Option C (generated with
 > Higgsfield, ending on a dusk relight of the restaurant's real storefront photo). See "Hero footage" below.
 
+## Status (2026-10-26)
+
+- Live (concept): https://sweetbay-restaurant-concept.vercel.app (Vercel project `sweetbay-restaurant-concept`, team leu; every push to `claude/wonderful-bardeen-td1m7f` deploys).
+- Content diff: 657 lines, 8 links, 3 titles checked, **0 missing** (`_source/diff-report.txt`).
+- QA: 28 Playwright states at 390×844 and 1440×900, 0 console errors, 0 horizontal overflow.
+- Lighthouse mobile, production: Accessibility 100 and Best Practices 100 on every page. SEO 69 only because concept
+  mode sets `noindex`; with `NEXT_PUBLIC_CONCEPT=false` SEO is 100. Performance 81–93 with applied 4G throttling
+  (LCP 1.9–2.2 s on most pages, 3.3 s on the menus, CLS ≤ 0.01) and 70–91 under Lighthouse's simulated model, which
+  varies run to run here. Remaining cost is the motion stack (GSAP, Motion, Lenis) and the Fraunces web font.
+- Higgsfield: 182 credits used (plan 164, ceiling 205). Rejected takes and why are in `higgsfield/rejected/` locally.
+
 ## Run it
 
 ```bash
