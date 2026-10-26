@@ -35,7 +35,7 @@
   --bg-sunk: #0a0d12;
   --fg: var(--cream);
   --fg-muted: #b9af9d;
-  --fg-faint: #7d776c;
+  --fg-faint: #948d80;
   --line: rgba(184, 145, 90, 0.42);
   --line-soft: rgba(242, 234, 219, 0.12);
   --accent: var(--brass);
@@ -58,7 +58,7 @@
   --bg-sunk: #ebe1cf;
   --fg: var(--ink);
   --fg-muted: #4a4f57;
-  --fg-faint: #6e6a62;
+  --fg-faint: #5e5a53;
   --line: rgba(122, 92, 48, 0.45);
   --line-soft: rgba(13, 17, 23, 0.12);
   --accent: var(--patriot);

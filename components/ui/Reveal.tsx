@@ -29,7 +29,7 @@ export function SplitReveal({
     // Split after web fonts load so line breaks match the final layout.
     document.fonts.ready.then(() => {
       if (cancelled) return;
-      split = SplitText.create(el, { type: type === "lines" ? "lines" : "words,lines", mask: "lines", linesClass: "split-line" });
+      split = SplitText.create(el, { type: type === "lines" ? "lines" : "words,lines", mask: "lines", linesClass: "split-line", aria: "none" });
       const targets = type === "lines" ? split.lines : split.words;
       const vars = { yPercent: 110, opacity: 0, duration: 1.1, ease: "expo.out", stagger: type === "lines" ? 0.09 : 0.03 };
       if (scrub) {

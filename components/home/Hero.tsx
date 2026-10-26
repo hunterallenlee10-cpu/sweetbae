@@ -40,6 +40,28 @@ export function Hero() {
 
   useEffect(() => {
     if (!motion) return;
+    let teardown: (() => void) | undefined;
+    let cancelled = false;
+    // Start after the page has loaded and gone idle so the frame engine never competes with first paint.
+    const begin = () => {
+      if (cancelled) return;
+      teardown = startEngine();
+    };
+    const schedule = () => {
+      const ric = (window as Window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number }).requestIdleCallback;
+      if (ric) ric(begin, { timeout: 1500 });
+      else window.setTimeout(begin, 300);
+    };
+    if (document.readyState === "complete") schedule();
+    else window.addEventListener("load", schedule, { once: true });
+    return () => {
+      cancelled = true;
+      window.removeEventListener("load", schedule);
+      teardown?.();
+    };
+  }, [motion]);
+
+  function startEngine() {
     const canvas = canvasRef.current!;
     const ctx = canvas.getContext("2d", { alpha: false })!;
     const portrait = window.innerWidth < 768 || window.innerHeight > window.innerWidth * 1.15;
@@ -102,8 +124,21 @@ export function Hero() {
 
     let loadedFirst = false;
     let cursor = 0;
+    // Phase 1: first frame, the idle-drift frames and every 16th. Phase 2 (the rest) waits for a scroll or 3.5 s.
+    const phase1 = order.findIndex((k, idx) => idx > 0 && k % 16 !== 0 && k > IDLE_FRAMES) ;
+    let limit = phase1 > 0 ? phase1 : order.length;
+    let active = 0;
+    const release = () => {
+      if (limit === order.length) return;
+      limit = order.length;
+      for (let p = active; p < 4; p++) loadNext();
+    };
+    const onFirstScroll = () => release();
+    window.addEventListener("scroll", onFirstScroll, { once: true, passive: true });
+    const releaseTimer = window.setTimeout(release, 3500);
     const loadNext = () => {
-      if (disposed || cursor >= order.length) return;
+      if (disposed || cursor >= limit) return;
+      active++;
       const k = order[cursor++];
       const img = new Image();
       img.decoding = "async";
@@ -111,6 +146,7 @@ export function Hero() {
       img.onload = () => {
         if (disposed) return;
         imgs[k] = img;
+        active--;
         if (!loadedFirst && k === 0) {
           loadedFirst = true;
           draw(0);
@@ -119,9 +155,12 @@ export function Hero() {
         }
         loadNext();
       };
-      img.onerror = loadNext;
+      img.onerror = () => {
+        active--;
+        loadNext();
+      };
     };
-    for (let p = 0; p < 6; p++) loadNext();
+    for (let p = 0; p < 4; p++) loadNext();
 
     let idleStart = 0;
     const startIdle = () => {
@@ -163,9 +202,11 @@ export function Hero() {
       disposed = true;
       cancelAnimationFrame(raf);
       st.kill();
+      window.clearTimeout(releaseTimer);
+      window.removeEventListener("scroll", onFirstScroll);
       window.removeEventListener("resize", resize);
     };
-  }, [motion]);
+  }
 
   const common = { alt: "Sweetbay Restaurant & Bar on Washington Street, Leonardtown, at dusk", sizes: "100vw", priority: true, quality: 72 };
   const {
@@ -204,7 +245,7 @@ export function Hero() {
             <p
               key={c}
               aria-hidden={beat !== i}
-              className={`display-lg em absolute inset-x-0 bottom-[22vh] text-center transition-all duration-1000 ease-[var(--ease-out)] ${
+              className={`display-lg em absolute inset-x-0 bottom-[22vh] px-[var(--gutter)] text-center max-sm:text-[clamp(32px,9.5vw,44px)] transition-all duration-1000 ease-[var(--ease-out)] ${
                 beat === i ? "opacity-100 blur-0" : "pointer-events-none translate-y-6 opacity-0 blur-md"
               }`}
             >

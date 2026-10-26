@@ -59,7 +59,7 @@ function Switcher({ menu, onSwitch }: { menu: MenuKey; onSwitch: (m: MenuKey) =>
   ];
   return (
     <LayoutGroup id="menu-switcher">
-      <div role="tablist" aria-label="Choose a menu" className="inline-flex rounded-full border border-[color:var(--line)] p-1">
+      <div role="group" aria-label="Choose a menu" className="inline-flex rounded-full border border-[color:var(--line)] p-1">
         {tabs.map((t) => {
           const active = t.key === menu;
           const cls = `relative z-0 flex h-11 items-center rounded-full px-5 text-[14.5px] transition-colors duration-500 ${active ? "text-[color:var(--btn-fg)]" : "text-[color:var(--fg)] hover:opacity-100 opacity-80"}`;
@@ -71,7 +71,7 @@ function Switcher({ menu, onSwitch }: { menu: MenuKey; onSwitch: (m: MenuKey) =>
               {t.label}
             </Link>
           ) : (
-            <button key={t.key} type="button" role="tab" aria-selected={active} className={cls} onClick={() => onSwitch(t.key as MenuKey)}>
+            <button key={t.key} type="button" aria-pressed={active} className={cls} onClick={() => onSwitch(t.key as MenuKey)}>
               {pill}
               {t.label}
             </button>
@@ -141,10 +141,12 @@ function CategoryBlock({
   section,
   filter,
   onOpen,
+  first,
 }: {
   section: Section;
   filter: Set<Tag>;
   onOpen: (sectionId: string, index: number) => void;
+  first?: boolean;
 }) {
   const [activeId, setActiveId] = useState<string | undefined>(section.rows[0]?.id);
   const listRef = useRef<HTMLUListElement>(null);
@@ -168,7 +170,7 @@ function CategoryBlock({
   return (
     <section id={`sec-${section.id}`} aria-labelledby={`h-${section.id}`} className="scroll-mt-[120px]">
       <div className="no-print">
-        <CategoryOpener title={section.title} banner={section.banner} alt={section.bannerAlt} />
+        <CategoryOpener title={section.title} banner={section.banner} alt={section.bannerAlt} priority={first} />
       </div>
       <h2 id={`h-${section.id}`} className="print-only font-display text-2xl">
         {section.title}
@@ -317,8 +319,8 @@ export function MenuExperience({ initial }: { initial: MenuKey }) {
 
       <CategoryRail items={railItems} active={railActive} />
 
-      {sections.map((s) => (
-        <CategoryBlock key={s.id} section={s} filter={filter} onOpen={openSheet} />
+      {sections.map((s, i) => (
+        <CategoryBlock key={s.id} section={s} filter={filter} onOpen={openSheet} first={i === 0} />
       ))}
 
       <section aria-label="Beer and wine" className="no-print-break">
