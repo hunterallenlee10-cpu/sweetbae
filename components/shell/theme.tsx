@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import { flushSync } from "react-dom";
 
 export type Theme = "night" | "day";
 
@@ -15,7 +16,7 @@ export const routeThemes: Record<string, Theme> = {
   "/contact-us": "day",
 };
 
-export const themeBootScript = `(function(){try{var m=${JSON.stringify(routeThemes)};var p=location.pathname.replace(/\\/$/,'')||'/';var d=document.documentElement;d.dataset.theme=m[p]||'night';var r=matchMedia('(prefers-reduced-motion: reduce)').matches;if(r||sessionStorage.getItem('sb-pre'))d.classList.add('no-preloader');sessionStorage.setItem('sb-pre','1')}catch(e){}})();`;
+export const themeBootScript = `(function(){try{var m=${JSON.stringify(routeThemes)};var p=location.pathname.replace(/\\/$/,'')||'/';var d=document.documentElement;d.classList.add('js');d.dataset.theme=m[p]||'night';var r=matchMedia('(prefers-reduced-motion: reduce)').matches;if(r||sessionStorage.getItem('sb-pre'))d.classList.add('no-preloader');sessionStorage.setItem('sb-pre','1')}catch(e){}})();`;
 
 type Ctx = { theme: Theme; setTheme: (t: Theme) => void };
 const ThemeContext = createContext<Ctx>({ theme: "night", setTheme: () => {} });
@@ -28,9 +29,18 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     if (t) setThemeState(t);
   }, []);
 
+  // Crossfade the whole page between Night and Day. View Transitions where supported, CSS fallback otherwise.
   const setTheme = useCallback((t: Theme) => {
-    document.documentElement.dataset.theme = t;
-    setThemeState(t);
+    const d = document.documentElement;
+    if (d.dataset.theme === t) return setThemeState(t);
+    const apply = () => {
+      d.dataset.theme = t;
+      flushSync(() => setThemeState(t));
+    };
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const vt = (document as Document & { startViewTransition?: (cb: () => void) => unknown }).startViewTransition;
+    if (vt && !reduce) vt.call(document, apply);
+    else apply();
   }, []);
 
   return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;

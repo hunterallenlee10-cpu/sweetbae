@@ -1,0 +1,14 @@
+Content diff · 2026-10-26T02:35:44.546Z
+Checked 657 text lines, 8 external links, 3 titles.
+Missing: 0
+Present on another page (shared blocks like Contact/Hours live on Home, Contact and the footer): 10
+  moved menus_dinner: <h2> Contact Us
+  moved menus_dinner: To ensure the best experience for all our guests, we require a credit card to hold reservations for parties of five or more. A 20% gratuity will be added to your bill for larger groups. Thanks for your support—we can't wait to welcome you!
+  moved menus_lunch: <h2> Contact Us
+  moved menus_lunch: To ensure the best experience for all our guests, we require a credit card to hold reservations for parties of five or more. A 20% gratuity will be added to your bill for larger groups. Thanks for your support—we can't wait to welcome you!
+  moved menus_signature-cocktails: <h2> Contact Us
+  moved menus_signature-cocktails: To ensure the best experience for all our guests, we require a credit card to hold reservations for parties of five or more. A 20% gratuity will be added to your bill for larger groups. Thanks for your support—we can't wait to welcome you!
+  moved about-us: <h2> Contact Us
+  moved about-us: To ensure the best experience for all our guests, we require a credit card to hold reservations for parties of five or more. A 20% gratuity will be added to your bill for larger groups. Thanks for your support—we can't wait to welcome you!
+  moved the-restaurant: <h2> Contact Us
+  moved the-restaurant: To ensure the best experience for all our guests, we require a credit card to hold reservations for parties of five or more. A 20% gratuity will be added to your bill for larger groups. Thanks for your support—we can't wait to welcome you!

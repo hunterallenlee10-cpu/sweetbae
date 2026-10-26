@@ -1,0 +1,717 @@
+{
+ "images": {
+  "8oz-cab-filet-mignon--wide": {
+   "w": 2752,
+   "h": 1536,
+   "widths": [
+    640,
+    960,
+    1440,
+    2048
+   ],
+   "blur": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQBACdASoUAAsAPu1iqU2ppaOiMAgBMB2JYwCdAYv+1ZV5O4Rhcu+L4aAAAP62GMOPx+BlvswYx1LZjsgny9HnC7Dtdi8mF6n3hrrnBstKo/n+IxdOZ4WlB3AtJfW+zmWVuDuZEOgc4815m+iRJmmjjshK2BgObq/Ub/vk9qgw6YFVb9AAAA==",
+   "mtime": 1792980549570.168
+  },
+  "8oz-cab-filet-mignon": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAAAwBQCdASoUABkAPu1ur1IppiQiqAgBMB2JQBOgMZ3EFt6Oobnc6j4XTWY3NOeCJpRpAAD85hMG/BCXOKDP6SYCTckIRq2VTCRkZix8Eroo/mfy5/5IPjfzOMLsLQG1Os3jIAtTwhyoMe1MbHgLFQz0tKIqdaMNrZ0zWeBeRX+h1oHgsNLWqf5G0qaytwKL8Iux4EAeRif+Xhv71e55qt9PuCZ4R90CmjElsToMPOe4C6D7qYP8N1EvVEGsup4z/Mf7IDfPw8MHYtce9qtpqAuXOuJxvgP2j4notMFuyxP1yk6Rwk192AAA",
+   "mtime": 1792980232538.1492
+  },
+  "banner-cocktails": {
+   "w": 3168,
+   "h": 1344,
+   "widths": [
+    640,
+    960,
+    1440,
+    2048
+   ],
+   "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAAgAPu1iqU2ppaQiMAgBMB2JYwCw7BwxKbJTHAUL3gAA/uowCLxQE0loViucDvYnTqmaKLm8/pUbmiFKqO4jZ5XbxpMwt1Ff5GhpzODnG1h6QFmMPJtAAAA=",
+   "mtime": 1792980551754.168
+  },
+  "banner-entrees": {
+   "w": 3168,
+   "h": 1344,
+   "widths": [
+    640,
+    960,
+    1440,
+    2048
+   ],
+   "blur": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACwAwCdASoUAAgAPu1iqU2ppaOiMAgBMB2JQBOgBA7FO6T0NbiqQAD4LB6THmQLoef5dsNG8ZBz+AZuyjO+iBOgzxBEYvdgGKnTUO2hGfVPwhLjHfDKM6iR5QspYo/ZW/KoN83qLhjLe6XOfKH059TkAAA=",
+   "mtime": 1792980823690.1843
+  },
+  "banner-shareables": {
+   "w": 3168,
+   "h": 1344,
+   "widths": [
+    640,
+    960,
+    1440,
+    2048
+   ],
+   "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADQAwCdASoUAAgAPu1iqU2ppaQiMAgBMB2JYwCdACPwEBcpe1urTYAA9rlrCfsSsIKdhsiSY80ZaKnULIXyoYwDaKpKVbFFUW3sTpFs8s21uYrfov5PAvfegFuDTiczAH3U6KV34dwkTYoXnhAUoMtBog4s+ANyRyfAAA==",
+   "mtime": 1792980545598.1677
+  },
+  "banner-soup-salad": {
+   "w": 3168,
+   "h": 1344,
+   "widths": [
+    640,
+    960,
+    1440,
+    2048
+   ],
+   "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACwAwCdASoUAAgAPu1iqU2ppaOiMAgBMB2JYwCdABxcif+1EFsEAADOOS8dVkUk+oqrw8DvmHfcSiA2cL2fDpPNitf8Q/sq1/wGtAXNrv6Ee4mLvSRvQfEysCy6bpcr5ro87Gw9ktL56msYAj+cpG7+zdQ0qj3bs0sLgAAA",
+   "mtime": 1792980547378.1677
+  },
+  "blackberry-smash": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACwBACdASoUABkAPu1qrVCppaQiqAqpMB2JQBfnAfkSyYG77RMO0m154yIyy9oAAP7jw8DCIMfExhRLEYXUpsck77E21awYvKT1G75yIEtb7C7EN3a3KOpNS2JK1VA4JgV4qUIhDImnq29+kZMpeKeeIL26ZMKUJtx2RWDulFP6iaUlban/zAfZg0uQAcfCbyjegCVD+oAAAA==",
+   "mtime": 1792980484286.164
+  },
+  "blue-cheese-dirty-martini": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAACwBACdASoUABkAPu1qrlCppaQiqAqpMB2JZQCw7A/H/vTjrQ5trpPSl6KNBFQAAP7pHrxNeaZCG+x+eqZRgb2BOdva5K28fFATCVqs0sKoeOaeNkIk9jBlTK2PtSyPeyugpf/kkCo92FRvXVS1kc4NaMFJDAkqh+LwRDFEmdzUd7pvyWqelSHPda65UUJRaljBGLXNBeITzSAA",
+   "mtime": 1792980285430.1523
+  },
+  "brussels-sprouts": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4INQAAAAwBgCdASoUABkAPu1ur1IppiQiqAgBMB2JQBYj5f9QGkCaOCl/rkhNHzfI+c7HFACAh3nMDXKV0q2wAP47QZmwJq6RmHGdDBDR+hA432GiZwHyK5MDEklZ3x8lq37c5nDTjJdHg5gY+iG6iyZRfzZh5/RW1p6Jw1BSiCv9AdiAOf9S5VrIDvypUn+K3IQm735kOWwLQCZUCGMewaAj9ps5xHgnYb1jxd3t+g6dBu2Dt+NX6o4FLfw+obxWtzD/WkbJztCQGNEyr7ojqKBA6vHhPAAAAA==",
+   "mtime": 1792980127858.1428
+  },
+  "burning-daylight": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAADQBACdASoUABkAPu1sq1EppaOiqAqpMB2JZQAAJ/GG6kkbGtOyAZws27bVYdWsAAD+6R68Rw+ny+SsIZMNJTk4VAnO3tdEWd35e4qlMrmt0JkyULMnRJFBYrQqY9ZJkPUlB2/qjJmDrLrqhbT+Y+BsvT68x/TXelH+NqwIi1KCih2diNQ1nnsHDuads0lyslzJ2p/CSkHG/WML7UY8NkYxatnBx3RR9s1QAA==",
+   "mtime": 1792980369686.1572
+  },
+  "caesar-salad": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuoAAABXRUJQVlA4IN4AAACwBQCdASoUABkAPu1sq1EppaOiqAqpMB2JZAC7Ad3Lg2MtjvAyKV9AVOzjco1Rxn8I3AUeHQAA/opX4+Os070lJg6G407cOMPOQSpYjak37rqtLq5/mdr2eC4y8149tVkEw4T3Czs71KBgUTkGILF3WNLnLNg7iv+9L4GJvVvyMV9W8hYjhQDmQqy3uNILjEG6pTHT+e/zpEO+4yLOf59F8sXohVT29ILKoPEqDWkf/aok1gV0AkFCALPWuTvQHY6M5becylo1L7V3O2HVuz6WyBnAnTIEg0qSkpSAAAA=",
+   "mtime": 1792980223242.1484
+  },
+  "chicken-bacon-avocado": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAABQBgCdASoUABkAPu1srFEppaQiqAqpMB2JZACxHxx/+kgPd0OX+SCZh7l1A9lrXBGZCddv5bffbCT4AAD+O0FVdIHSPVLAq9iwS9E+2aDRQiU8CGnvh7e9Gy3Aaiu8sT3CrrSkdYj/7bwiENv1pcMu7A5u5nieLwADdjVUHY7BecnT7BDTEOd0v8hR6mpxVo/n7obdXfeudeKAxELkIXDAxQ5XYA6O5TUCCC5hybkGQd9rOi4LqSkBvnmILrLx50+vYjHhSQDDbEyROOob15rDwACOQAAA",
+   "mtime": 1792980279286.1519
+  },
+  "chicken-piccata-lunch": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAACQBQCdASoUABkAPu1srVEppiQiqAqpMB2JagCxHyGBb/2Msx+/GIO5lyCmYFP6IGFGINa2gAD+O0Z06y1SO88VyRyeR6HiVUHEPaltzysb23i6hG7Ilsm50TSIyIFFbcqK2miXU8DPpUJOmL+39rDd9UaCdoAqxZygYuGznbyKElBg1CFjbUenGTLpOA7ZX4FjRCuAG8UOLFLuj+f3xbdcPGTij8gzZ97R3a8OJ30KrxTeK+HmcrzdK21V8+nICpJ3hoNqkVgALt4A",
+   "mtime": 1792980227758.1487
+  },
+  "chicken-piccata": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAACwBQCdASoUABkAPu1sq1EppaOiqAqpMB2JagCdMyG6gAZHlypPVdoDwvQkaVe9H2mecmCMHgAA9ryd1wbdNPp6b3EzMxihVrFHY9W4MSs8PjA3JhHjlX3/h7D0KwlPJYMjKVuJI4E2HXMqb5V/lSd3uqlSZFNoPVdV6JALXeP3ii2XPMq1yez7WxnujKWoqfLkoKHEmQop5h1WnUox7JvOifLe9xl6iz8eHCtGjDALTc8zWACsXACfRWvJPmkPqRNnDPYMKE14dcMayBcBwD7nAAA=",
+   "mtime": 1792980481598.1638
+  },
+  "chimichurri-meatballs": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAABwBQCdASoUABkAPu1ur1KppiQiqAgBMB2JQAHPVD2j3HiDrz0Y9dHAjMgM2FS72qn6dsLgAPy0rwG9AEbV+Q3bvQD+LObx13yRiIQqQcATPB0J7b2XyhQ3mEDEBCH0Z3U0SPjSmTUyXa5CWAn+3ft9kuAMr7i4ohtulk9X6xyNKYjIbXcwbc51U0h1S8tpLuwU8jHQr+vHZSRs5csr+PYqv81dEdMfen3WqN7DsAXeylMbBl7GjIB3l9CPLZaU2acMvVKFno6C8Ysfos+hNZnVIdU1rwgQAAA=",
+   "mtime": 1792980125534.1428
+  },
+  "cobb-salad-with-grilled-romaine": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAABwBQCdASoUABkAPu1qr1CppaQiqAqpMB2JbAC7My/Bb+jRqXXQ3+DuaLp87+F2ZN+GN4JYAP47RnTrLVIr/9kvS+tlq4dZI82t440h8tV6T+OAwZ05YMmLX4j40Atrm9Q7J8GP837DPt246xh5xefrjdNgTGk6Dn9Scrs0Pbx2dEOVQp8qGubcveBboF4X3dVm75M1g8FHkx7s0FWDlSQkJtzwbIUp8+7AaF5UAKLJEUc8YcLxWt7ZV8loy9Z3v+R4mjf66vb0GIiAAAAAAA==",
+   "mtime": 1792980221866.1484
+  },
+  "crab-cakes--wide": {
+   "w": 2752,
+   "h": 1536,
+   "widths": [
+    640,
+    960,
+    1440,
+    2048
+   ],
+   "blur": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACQBACdASoUAAsAPu1iqU2ppaQiMAgBMB2JQBOmUAS2AwVWxM6Uo5mVb2TJrgAA/pv83+mF8wriNe6EDr/H5SvaqgoMbL0lD0Bsf7asnAhhN+Y1UeFwhjReqWdI3Py/YVUOzTXSClxou3UL/huWAyPerz3wdopc5sjtqfgUchR0VQq5mgAAAA==",
+   "mtime": 1792980486478.164
+  },
+  "crab-cakes": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAACwBQCdASoUABkAPu1ur1KppiQiqAgBMB2JagCdMsvIsIABF11LvKMpGFnX1SM0LKhjt7AJlQAA/GDQ0q7bLxz2it0DCG/PZUrmU1XSKZ3Otz5UsC4A3cWQK6XgrGyfL0JkEL0S41XKtxYjkTIjIMncTpshuTbTs/bIYZPtarZLQJ+m7OT3d4dtCwUxToXJjPNkK8Djemlls/NUUGiysnuzi262TMwAAokh9SAx+ca+FpJr28EIZsZWwvvZMOOYmUkfQM1OVP6Hu2Qh+JZAAA==",
+   "mtime": 1792980223822.1487
+  },
+  "cream-of-crab-soup": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4IOQAAADQBQCdASoUABkAPu1urlIppiQiqAgBMB2JYgCdMt9nArY0DPvqGx8jaXwd7fugwYWM3MbjXawAAPw74SOAUN7ZsvnFDmEnUAdpElbPA+FFjhUbCwc9sr4UIl9rBqay+6AHa6iHVmDg33Gh8l/wx8Kh43LLTh6ZU0kR2OyZfz5vNGOZUCLs8YiZDCwrBDMuWchM3ZtkILEfJBkTSFk1seusRkPRJtQ52+Gvtx1EX3AQhy1MmqauDKErJBFqMLSqlTCW0/lZh1dupOcpJT+RiaduzuPjxPbiw8cP271RgMTmvNBd4AA=",
+   "mtime": 1792980220834.1484
+  },
+  "espresso-martini--wide": {
+   "w": 2752,
+   "h": 1536,
+   "widths": [
+    640,
+    960,
+    1440,
+    2048
+   ],
+   "blur": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADwAwCdASoUAAsAPu1iqU2ppaQiMAgBMB2JQBYdhEQdyRCGXUNVrLUAAP5E2VxQc6OoncdV3qY1L154CZGJ/OZP8cT7ygN4ZgblmcVRchdUmHGuUIVfV1CIjTsLGzA3wIJPM6PvVyI8TzqYU4TwEQOIAAA=",
+   "mtime": 1792980492918.1646
+  },
+  "espresso-martini-clean": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAwBQCdASoUABkAPu1qrlCppaQiqAqpMB2JZQDImdwAbs72gGKUl9s61Pu+8x1+bf2oAAD+6R68TXmmQhvsbK4ni/6WD/ZfSU6pCEfZnujlbejb7iETPxebc1xSyWrDo+/Kp3f8SDhNaN5KjueTD+SYf8nIIVJ3w4dhwfvQXdluQuPbr45XtgLAsAYPOjAG3/U0CLnVfjAgmVgg9IAAAA==",
+   "mtime": 1792980541110.1675
+  },
+  "espresso-martini": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAwBQCdASoUABkAPu1qrlCppaQiqAqpMB2JZQDImdwAbs72gGKUl9s61Pu+8x1+bf2oAAD+6R68TXmmQhvsbK4ni/6WD/ZfSU6pCEfZnujlbejb7iETPxebc1xSyWrDo+/Kp3f8SDhNaN5KjueTD+SYf8nIIVJ3w4dhwfvQXdluQuPbr45XtgLAsAYPOjAG3/U0CLnVfjAgmVgg9IAAAA==",
+   "mtime": 1792980121514.1426
+  },
+  "fresh-baked-parker-rolls": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAACQBQCdASoUABkAPu1sq1EppaOiqAqpMB2JZACxHy/vQAnEOrqGyrLUhzpD+BEBWYsd72+AAAD+O0Kc22d6dhGtk/V8KLka/h0CLTuI6Rfo3rSfLMdEfm5sAS02dtdV9JCUTZckCG72KufwA7Y6bmOCw4vcr5y1G1T7IVtGtoRPog8u0/eBP6fAVg92J9NHe3n8iIoQiOWYr3zVFLLG8OLtFXMuPJbQgz7WngKkH5axNw+fODXYxSPrJzKr/7eB9rCmQlEUQw9WGlOZH1ZipeO6AAA=",
+   "mtime": 1792979970454.1335
+  },
+  "gin-basil-smash--wide": {
+   "w": 2752,
+   "h": 1536,
+   "widths": [
+    640,
+    960,
+    1440,
+    2048
+   ],
+   "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACwAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JYwAAYczYlCFhWody0AD+6ft26zhsX9CAtlHkwZoNJ0no/SlrjmRBotpJaHFtlJeOfZIf03K36/UEMQXmPTSQXIzKh9AA",
+   "mtime": 1792980491002.1646
+  },
+  "gin-basil-smash": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAADQBACdASoUABkAPu1qrVEppaQiqAqpMB2JYwAAJ+s9J/1WX7a4geK8onWJEbssAAD+6R68TXmmQko6eJf3wtz2iou7lBaGAZRVKYrBGOL62iMX/vDa+LB5wOfunERPJzlbjLO37IVzff5WeLlTdkhJrUABPyVol+1E12cMO+Wf/QkczPSSecIAUzvEDJubVCH7tyn5fvvEob8ZJlMSaXTBfO97EQAA",
+   "mtime": 1792980282106.152
+  },
+  "granny-smith-apple-salad": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4INQAAACQBQCdASoUABkAPu1sqlEppaOiqAqpMB2JZACzgYwSXDIv5APyw9u+/60pS6Fql4V764b+AAD9vI5c6e2HR5O5R0iAjcVzkT1CtgNx8oSQxzpWdkmwWAm0bTBbq5MzFzDp6lJ2aFMEbiMd+kUi5OVseNrBs1x5MLjXXvkTGbyNNVZVN29BhUmVxW3P+ENpP+yQESXjzR1Mzq47ZJOQG9yzi5PNfsMeaK3uiQE+BEHtHgHPJij362ImU59/FJ0thuOXqWGNn4TfsthKJCkWuMrB2LLCAA==",
+   "mtime": 1792980133746.1433
+  },
+  "grilled-faroe-island-salmon": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4INQAAACwBQCdASoUABkAPu1ur1IppiQiqAgBMB2JZgCw7dzuaX9QmB3GG3zXxPgWaut5it3mj11/bgAA/jtC9i8cIzMinVzV8fAsRHLwcR6UeVX1k4sPSqTFOSxil2Z2Muc7toEc4XrUH2X33pI/89+/JgjMwLLylEQXL06Ebji4+jVpIk3Yqh8lF7mx1z9OqRFVNHD2GBkxxfHrzmXX5RmLDh0l+E5430xlFbpOR8fWDCHvB9k/ut9zRWJb30acDT0MM9la83StsJazWZ03QTk4NQo1vKgAAA==",
+   "mtime": 1792980225458.1487
+  },
+  "local-tomatoes-and-mozzarella": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4IOQAAABQBgCdASoUABkAPu1ur1KppiQiqAgBMB2JbAC7L2uagJokLGDzS/hwdtBnWfbGud3X85fEdynfRrCAAAD+O0GCa953g2A7qP7EUV8KUB+u3mrWLVg9Ea0SjkzHI5zf+f1Z/rUbmQAc6KnlIH79Eu1rrjrsDMrVqBjgKvqcgD+dovVUIyRzB/5Jvt/y7BFgjN/nXfKD6T19barMshCnFNbIwJ6OOopoFvw9kIASBLkogqDKj7AZDUr3yBLTOiRHKtG18y1AS2z5EnYGuptr0e0xrPaO2Q+IGWQkHQNmUb7DG4gAAAA=",
+   "mtime": 1792980135322.1433
+  },
+  "mango-margarita": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABwBQCdASoUABkAPu1sq1EppaOiqAqpMB2JYgDImdwAcMX4hs2DWI64gVtHZYqXKavhMDAAAP7pHrxNeaZCG+xsriZYgu8RRfPN5TM/CfKlw2RoOdaQ7O9QwUVZLVqx7IaNYfHQXt1TYcg70TAZPlUBWvF3Jj33K+bdOCPCDMpdXhrGK/UkJgIHdJQu7/1TV0+gXOYRWhNNPGjlqrA3WAAA",
+   "mtime": 1792980284046.152
+  },
+  "mushroom-ravioli": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAACQBQCdASoUABkAPu1sq1EppaOiqAqpMB2JYgCdAYzGYXoXA0N+3TtTyKJr9w+wroflmNCQAAD9jG78tajhsmUsSGbVmXSzjgjPQklb79GRi5WV3/OhonO79VOlcK49wfYtWyNq65YLBpm0eMdq36nEQhk8r/8jIDzggrPG0HsTzoNe69wqUcHZQg+cpkOgaGbLvqHl7D7K6oehDygzZi8NC7+U4u7LhIY+2k2In5tZDqGn+7joLWw5p94oMJNjy7tKvbpMdut+Pj6ON0iUmy54tMdZAAAA",
+   "mtime": 1792980231018.149
+  },
+  "oysters-cargot--wide": {
+   "w": 2752,
+   "h": 1536,
+   "widths": [
+    640,
+    960,
+    1440,
+    2048
+   ],
+   "blur": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JQBOgAbOyGCaP4OOIAPHhWd6WaGORxRz5l4HN9irdogjPj5VI+Yy4uirOre8h5d8Ow9Bd8v/vWaN4mWiij/Pb8cZGnuyA5caCvA+YrSXUuUYS2irC0STQAAA=",
+   "mtime": 1792980489518.1643
+  },
+  "oysters-cargot": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4INQAAABwBQCdASoUABkAPu1wr1IppiQiqAgBMB2JagCsEf/jeaSvsv852iNGMqYV8u6N3ffhsD0AAP47QuV1anikL242Xk3D9Pe1YPlCyZEcKKtePQaiSuWXE/HmW+TUKfW86Vqta+oiWLlT7AzdUZ4cCV6Me/yQRIaBTspGbApXcdAjCxyqVGRkFKP42wE1PB0DbduN5CnrvTF2olrTDvR6Y3oZYZ0kkT91FgLf6+aJufm38rjV+u+aL/1+Xs9GoABrqFhBE4XhGA1sbo0JqJV/uoTXLHhoAA==",
+   "mtime": 1792980280562.1519
+  },
+  "pan-roasted-duck-breast--wide": {
+   "w": 2752,
+   "h": 1536,
+   "widths": [
+    640,
+    960,
+    1440,
+    2048
+   ],
+   "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADwAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JQBOgNO/IXq3xnLUimYLcAM43W0wC/J/xEw0gzRs9bzeWVfSvJJbAgdJdZi41j7geLDYqjLs+id5RvDBzhYJBotQOC++GDJazPa8z/CJ74iZqq9ctYuncMw925//3GACNzmAA",
+   "mtime": 1792980548894.168
+  },
+  "pan-roasted-duck-breast": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuwAAABXRUJQVlA4IOAAAADwBQCdASoUABkAPu1sq1EppaOiqAqpMB2JYgC7AYyUcO+bbX77p5x2pBqWA18gu08dw2wl6Tj6gAD+T3LDfzCPKQ4rSS38dzKe9myxahRtqyvqBhV3/hvwIYZVBxCc+8XYtQRpmdiZsvWVarqC2zwNfQTInnRTBC4MaYdsK3G9Dq2p+GH44u+eDvHPWnbu3vIiTtAWfphxvgpCxVmSulWgHjON1usXa3BFIjKFJInWgdjXuPLOAbhETljLSuSpUCyZ+V/At6+9D0zjSbVkvIg73fzl52b6FIwCjmW/XcLAAA==",
+   "mtime": 1792980365354.157
+  },
+  "parmesan-truffle-fries": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAAAQBgCdASoUABkAPu1qrFEppaQiqAqpMB2JbACsL9SgQHXeHL6FaZosYMDf0C9YoL6aNO9K/D218AAA/jtGFEayzvBmCcNnWHAM9PRWnfLwV3y+NRkOTF0eQ6L0r0ovo8QQbT9W4NQK4lbF+XnBaM4sRDfrXkblMrr0ULhPADwx+DnF2z6ncg7PFZfI1IeVyaSOndN94JPVMR1k1NrP1djpGD5LnTrVMBbKLeX4HP2Mpbgvz4QNaZ065LPeuey1chviObM0OYnlaOMyhChX2TARwAA=",
+   "mtime": 1792980130770.143
+  },
+  "pear-martini": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAACQBACdASoUABkAPu1qr1CppaQiqAqpMB2JYwAAKt5wmm+TXQvEtpj1qMivzUAA/ukevEcP14ehLgSU5/cxCdEUPelEByUpUpfLqudvMzpd8aDlMpk3cyRkAhoW29DXv+JXZPMfCaDCZz2sQDqJGXEGPK7BT8xSO9ezSdA5sUSv/FaVJ1MVELeYaaIQ1YG/L95DHonmVSkgiVlYAAA=",
+   "mtime": 1792980543858.1675
+  },
+  "pork-ribeye": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4INQAAABwBQCdASoUABkAPu1ur1IppiQiqAgBMB2JbACxHxglzAicRWULKfO2KbXOuzrIhXRtEOz4AP47RharnbZrjNk+/b/1CdfOSqAZWaZJRvAn10deLhgqdUrzJBA1akQwDnV01gvRbVSO1WUe05D319UHk7CTQogh/myrFLMumr0oimvG2FywYC1udUgt6C9gkr3FBMqC2MeLnStIl+FPNP6t/qy/bIGhQaUAq664guBZ2Ou64C4LPCzMzD9ZwCrFT+BFoQATQnIDuS8Mx9FYBUAAXSAAAA==",
+   "mtime": 1792980229478.149
+  },
+  "pulpo-al-pastor--wide": {
+   "w": 2752,
+   "h": 1536,
+   "widths": [
+    640,
+    960,
+    1440,
+    2048
+   ],
+   "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQBACdASoUAAsAPu1iqU2ppaOiMAgBMB2JQBOmUAnANo+Thna6qGwfXJAAAP61a9paQxa9YErL3fVGS7nBB/cfb2JAUmnaEjo3mmqPcvR7FXjqTsH2WO51wtGS2pDZFFoVke6UMVi8oJDRME9KP9moVetAQ39gvA3ZXWLlahQNylKlLEps0mAA",
+   "mtime": 1792980487902.1643
+  },
+  "pulpo-al-pastor": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAACQBQCdASoUABkAPu1sq1EppaOiqAqpMB2JZACw7YwwYXnwNpO/JvVdMSrXp9nlm68oXqguAAD+O0X6byoQV1qVjFexlHig2EqBZ6cLbTIiS+/2wQuZmxZegx8a+EExhXpOABgvJxXsJapd03fB8ODCQ3Wx90Fk5GngB295yxu27ImO2oC+fgpWE+V7SRCkR8x5ebVV8BSUdgixspVGh1c45SsFlczDFvl1/DnXmfF73Yh5WT+n4bLAq7J4r+rMAzOzIG0esKVWiIl39WdiZ5QBtUdJAxgAAAA=",
+   "mtime": 1792980122418.1426
+  },
+  "smoked-rye-old-fashioned--wide": {
+   "w": 2752,
+   "h": 1536,
+   "widths": [
+    640,
+    960,
+    1440,
+    2048
+   ],
+   "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JYwC7AB3FLIg/fPzcqAD+71uBjdI2iEJJJjeG9900UI1PLY7uV+wB31sdh87mBgsdj9YAphAEMa+4AAA=",
+   "mtime": 1792980551182.168
+  },
+  "smoked-rye-old-fashioned": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAADQBACdASoUABkAPu1osVAppaUiqAqpMB2JYwC06A/JYE4J4z+P1pIwWdux9EhoAAD+48PAwiDHw6hqjuYuBD2LO/nb1fGl1H4Xn5MdCsoM3mvBq4oTk2j1Mp8GsPElrogbf5kN3Nn2HUdmczrs+YGC6vO/AXQy49TLDNoBtcH2/zL/+oZycs3v9yvoPZHlz2Ap4kCBJtD6ZBHUKgAAAA==",
+   "mtime": 1792980368082.1572
+  },
+  "smokeshow": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAABwBACdASoUABkAPu1irFAppSQisBgIATAdiUAWHYH1ByFnNAKXG1BxF8g+IAD+6R68TXmmQhvsfnqmUYG9gTnb2rT0q1vefLZhNnL2S6wF9BB2Zy26cRPp5KbhZJICmBM08gryAPyIHLcl67g7WkWEd+B+q0rk7H63RB9RX0W61QwS6HgKh6IMNzH8Vcm2Reyrx/Dac/diil1feBet0uqAF8AAAA==",
+   "mtime": 1792980283414.152
+  },
+  "snake-river-farms-wagyu-beef-burger": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAABwBQCdASoUABkAPu1ur1KppiQiqAgBMB2JbACdMt8lvAxlqE6VhfIIqBUFAj7dspBUSeaAAP7AM+71HB/fqf8WzB1/902wky1rwdRcSYuwbjUrlMi9Q16unu1BqbvstJcEA57/ZN3tv7SroJwji7bw1RT84s2ij97CY7jOScxin1AUYVWB+1DD8VBZ3F18MxxfkIBNennnjrvOfMjnJoX9a0I9DspViMOdEnsKcboygXShIyxAOFts5QhC8jvhE+bWm6uqgDiYUyL8QAA=",
+   "mtime": 1792980366438.157
+  },
+  "strawberry-vodka-mojito": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAACQBACdASoUABkAPu1qrlCppaQiqAqpMB2JQAAGKDfVJ/gi0wwwSqMpL4I0A8AA/ukevC7vrrbZIvtsN0o7Z/zPVJgUwWPikBHjKaxecMCmQ+/OXFcG3F/N2CBrHIxY2u5W8iKd+Y9w1AZHh2asDFYMeV2C42QUtfVJb8Xw2e3HmzoFoFKP79pamMc82yqe4rdZBBcmJa2S6kzgqgAAAA==",
+   "mtime": 1792980287010.1523
+  },
+  "sweet-and-spicy-shrimp": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAACQBQCdASoUABkAPu1qrVCppaQiqAqpMB2JZgCB4QPH98wIsopQLRWHWHaR9MOrmHtKYOLwAAD+O0Z06y1PAlRqBGI07y+UVT+JLVqwAtOamJ+f4T1TGtC9xnSZeo2NcWGpKqR1wj2VpNmv8J9BpvC3x9N8llUgS/3ZN4FsTs4F6MVstdIU26gAURJFzHmUCBk9nJzFU/fpugYkKpPhQK2hUEn9WRkCMi00a1//6QwXIs/C0x1Mvh4tDit6wPbFp5uigmAcSoTdBa4e7m8BEplsAAA=",
+   "mtime": 1792980278338.1519
+  },
+  "sweetbay-burger": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAABwBQCdASoUABkAPu1ur1IppiQiqAgBMB2JQBOgAig+jikIhlcSxrV0LKpGH5eKB7swnalAAP7AJD7+2+9Q60CNl8Ty6Ue/557KfFR2yxsCpN6oQ9CAeLgDV38/WmTsL0PxjeVWC+Zz9AKK27UaBfYPdpgXFRKd/yz+ZrpSyv+tNtRC8SmNYccviD2KFqiK45tr8lJ1Dnb4Eo0TdcugeS0TqoIghk6I4vikEZbzwMgQ8P2Hbi//3iuEXp2kuEro4FbZwAAA",
+   "mtime": 1792980482598.164
+  },
+  "sweetbay-radler": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAACQBACdASoUABkAPu1qrVCppaQiqAqpMB2JQBOgAdeml7mlTEM9hiUP88P88AAA/ukevEcPp8vkrCGTDSU5OFQJ03jGY2FvbWRSD9yMZTWMbMgO0uAGbYPOLF/N2CHwP85aVQ8TEJuxJ9dnhUJDt11I29+kZJx2IebHj66QLx+wPLyWJ3YrNQ0aYPfesXMqHa9B8IRXm1I6kPuWMAA=",
+   "mtime": 1792980484878.164
+  },
+  "tenderloin-sandwich": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAADwBQCdASoUABkAPu1ur1IppiQiqAgBMB2JQBdl+LcIGMxmF7ZAZGP7kp1m98cz6k2H6Ecjvm8gAAD+7R6WLfLtj2Kil891Gbyc1t+ONrdfaYzvVOYTfQ/dfOucSmavibIaOtNeCx2jcIfY4cXtGxrxQp/5KSD4toEpofWnK4VdFI9X4b669pN/CqvsISpOgMM/CqXl1pB25n00qHc7jqYUyYgtUiTzT5G96r3IjNpVypNxkxcKcWylCbcyUWsRv+OHmu/euqtOx6YlWX2kRbWv0QAAAAAA",
+   "mtime": 1792980543202.1675
+  },
+  "tenderloin-steak-bites": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuYAAABXRUJQVlA4INoAAACwBQCdASoUABkAPu1wsFIppiSiqAgBMB2JYgCuHywTmwVzQ5udptL5KfAT6fzbCZJIhgj+BKAA/o2j38SU8FH5yFz5KjfuRIkj2ycYGTRZbjXQ1qlD7/1JOTGjg9fR54QIW84QEiAPN/eQlN6ndK/pxEjCA7zN569NEqmc5rrnCNbWw0Csl/P+iBLkM0APLeHqZ5UUdbhWrnAAZQdjVmV4wC0ZGglDbPG8rh8QVQ1r0o2hyHtMJQxFGsWCUZBYrakWlicr3gqIc/mPgtBdV3fT7jZcOywPQAAAAA==",
+   "mtime": 1792980126482.1428
+  },
+  "tuna-poke-nachos": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAACQBQCdASoUABkAPu1wsFKppiSiqAgBMB2JagCdMxgvQTRYRlJdETi51m2FWJyy6zfiY4kZtAD+O0GL7VWzXGE9U/V8JFLLi3g8JDWaYP7GuBCRMAK7Jog71sWj6V01DHqTj8WBsvqUbq/aFwIZJGAJxeLDz32dL634r94KuOqDwPlOCZ6CPJTfLm7qBLM3w5ohVze831UBBmph6YldRlW7lnJ9ZixOYl4+E3gdC6wDBp0OfPUdwjEfA7JYaVdquDCSMRwb16OCOlAAAAA=",
+   "mtime": 1792980129410.143
+  },
+  "wine-and-beer": {
+   "w": 2752,
+   "h": 1536,
+   "widths": [
+    640,
+    960,
+    1440,
+    2048
+   ],
+   "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JQBdgAh+/0jbk8DP0AAD+5FF63M2MzCbK1AIoV15f9zTnpwNQ5Z15NQM2qRCzerrSMghiSlfag4Js5rclkUT5I6eslO3bFWqBNTMTonv7sWYwAAA=",
+   "mtime": 1792980494558.1646
+  },
+  "zucchini-fries": {
+   "w": 1856,
+   "h": 2304,
+   "widths": [
+    640,
+    960,
+    1440,
+    1856
+   ],
+   "blur": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4INQAAABwBQCdASoUABkAPu1sqlEppaOiqAqpMB2JZAAFEB74Rf72AuAqgwL1qnIeTKTy7i5mZxVIAP47QYvtVbMimiT0UTt6ntDpExd6nuTJDho/x2S+7iblRsMFF79I/N769x5vpFNkq7SstdQIVkdY2mxeBASWwt0UeY97bXahiTDPPAld01rfixIwUv0vjz0wxqVg+jV/yugvFTkTwKPcNErzIbiTPxL3ly5Cs4VqxqYD4TM8QFLf3dG7l/WgWU2Vpg5036xYUYNcJDhTrvDrQgDeTgAAAA==",
+   "mtime": 1792980123954.1426
+  }
+ },
+ "loops": {
+  "8oz-cab-filet-mignon": {
+   "bytes": 122718,
+   "crf": 26,
+   "mtime": 1792980816218.1838
+  },
+  "espresso-martini": {
+   "bytes": 54857,
+   "crf": 26,
+   "mtime": 1792980822502.184
+  },
+  "gin-basil-smash": {
+   "bytes": 54741,
+   "crf": 26,
+   "mtime": 1792980820006.184
+  },
+  "oysters-cargot": {
+   "bytes": 124393,
+   "crf": 26,
+   "mtime": 1792981086890.2
+  },
+  "pan-roasted-duck-breast": {
+   "bytes": 100682,
+   "crf": 26,
+   "mtime": 1792980817686.1838
+  },
+  "smoked-rye-old-fashioned": {
+   "bytes": 126633,
+   "crf": 26,
+   "mtime": 1792980821114.184
+  }
+ },
+ "real": {
+  "Sweetbay-6958-scaled.jpg": {
+   "w": 2560,
+   "h": 1707,
+   "blur": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAACwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYwC2yB5OB/2g1h2OAAD9/S7yWS61KKrt31Ky+rip30ZQLATEtk0Y6P+QGtKcVtuTr5zTTBmRqrRTung2nA3ZKkHknqfRjUKisLBbcvJuISCFl4JNcN55HX3drhnQjvrXgkfBwo6JjJE1EAA="
+  },
+  "Sweetbay-6981-1-scaled.jpg": {
+   "w": 2560,
+   "h": 1735,
+   "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoUAA4APu1iqU2ppaOiMAgBMB2JZQC7ABcOxLWvLiQEO03AAPJtBm431Q4jN5heCuKHcdqJmiiDPQ//4gQLYnY/BrYTSox1aqfxeo+dRHhNEBeuSN3KeU1t4ED1ZaYJX55v++Ub92rppzcbO/JLF/opDIyHcgMgAAA="
+  },
+  "Sweetbay-7090-scaled.jpg": {
+   "w": 2560,
+   "h": 1820,
+   "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADQAwCdASoUAA4APu1iqU2ppaOiMAgBMB2JZwDKACF5S5CVKGLOdAAA4ZWahEkxEkvWntz0TRcZiXMZ8OJ9u8n4TL2SD2yUWhBgt9d7JT+YjGPA6x41ol+HgRquao/ss6X4T/Ead6uHRmIwn5+bfXV105IcOfXyczwY0GffPY1bgAAA"
+  },
+  "Sweetbay-7544.jpg": {
+   "w": 360,
+   "h": 270,
+   "blur": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAADwBACdASoUAA8APu1iqU2ppaOiMAgBMB2JbACdLwGUAILMRRa87ulKjObjhRoMiAAA/uhmgTEYdw70bqGszO6eo8KssWSaQkeDUT43/NN7ru6pSr2VM+KCtmnE+rl8MOAvF4Ol6e9fOkXBD4xjlYsw90uqxVOUB1wUTGXhTkomFQuO4xLvfsGNZoPpOyLN1XEXYe8k04LAXYsfg+9OjTTPCbJby8EXrMxdSAr/4/N1ioj9eV1xh+2/hrJ+knAAAAA="
+  },
+  "Sweetbay-outside-street-scene-1.jpg": {
+   "w": 1720,
+   "h": 1173,
+   "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAQBACdASoUAA4APu1iqU2ppaOiMAgBMB2JYwAD5SoveVxjC8qPQTkIwAD+1RaxVpsT4NY7LbLNjNppXgW/i3CjmXQE9zlrjZvGrYCWuVG0SQLfLgmfxR4qvq/x7u1vSTH7lOWXId3jgJ1+17YKu9tKv/v4FaK/LGZR/trqZYpjFo+Ja9CjQAAA"
+  },
+  "best-burger-leonardtown-md.jpg": {
+   "w": 1920,
+   "h": 1080,
+   "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwAwCdASoUAAsAPu1iqU2ppaQiMAgBMB2JbAAAQzFReysT/aqbUAD+4lJiCp0uRdx9FANgYK3pfSU7+3PUGQ1TMNRo16oT3FR2kAWw6MVbvIxRIOLQQM2uRiO9/lRf0hr9tZA/5VbUV1oYL3XPSGjinWkLQAAA"
+  },
+  "salad-scaled.jpg": {
+   "w": 2560,
+   "h": 1921,
+   "blur": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABwBACdASoUAA8APu1iqU2ppaOiMAgBMB2JbAC7MoADZWPZmfWKjxsLYvzOgAD9UvDtckK0y5u37T1c+HhBoB85iQFh7xZnndMPq3e+gE2t4zCmANM7H/adF5rt6MIXf83s+VlLBEmEGB9NY4KIGI0kRZtj7n83TLqPFIHBIcFwu6aEki5GRuXSStYtiv7NyG+Meo7Hg3yPxIJEmYmPLEqUAAA="
+  },
+  "sb-meatball-header.jpg": {
+   "w": 1366,
+   "h": 600,
+   "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwAwCdASoUAAkAPu1kqU2ppaQiMAgBMB2JbAAARlaPt6MnOMmhAAD+7WEE3astHr5vy8/d7/LcJm+zJpML0v4yD/zVucO+MvDLteZAr7hjBt/JN+rB+Bw1MvFeweIUvFCM5t0T56MKeGr5NJe2AAAA"
+  },
+  "smoked-old-fashioned.jpg": {
+   "w": 1600,
+   "h": 900,
+   "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAwBACdASoUAAsAPu1iqU2ppaOiMAgBMB2JaACdMoADDc9rh9cAGXxVucAA/B4TQkAYPddrhC9F+QkvzCsKp0AKDStqC5a/gHoVg1wNTEYUBQLP2MjjZYPn9Yt8kwfs77v+cYp6AERxGJJ9zPyPDIATVvLCAfAA"
+  },
+  "wine-room-crop.jpg": {
+   "w": 1440,
+   "h": 810,
+   "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JZQC/OB0/v5tnUpoCk+3gAPa+9DqPGZ46yXfIKx+nrkG6YwCMD6GyCSzdNssfzs6xcIHM0CXnuNYrZz/4YPMN/ZaMj1nLCAz5KNfyJZxfzyRL6Rcs0nqd+e7XphNxdP+FIq2DTNJm2AAA"
+  },
+  "Sweetbay-7544-upscaled.jpg": {
+   "w": 2901,
+   "h": 2160,
+   "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAAAQBACdASoUAA8APu1iqU2ppaOiMAgBMB2JbACdIExguhEcbnuemVoOEAD+4lX6xpXLayy6/9hHD/Cj9QcNTpkejHMHA1AznEsJu/gR7lWIB9YbdSBOqBZAb522fxEyVDE0CUbmzh/1vn8M6leTEFzGuRbEoQSzensd7QHgZ6kUEGG6sfzbHf/wa0XC2BaFG+7190Q/fCf80Kld1nCjiaZ3Emfv0bLBZmwAAA=="
+  }
+ }
+}

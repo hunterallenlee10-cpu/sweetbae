@@ -22,7 +22,8 @@
   --theme-dur: 900ms;
 
   --gutter: clamp(20px, 4vw, 56px);
-  --nav-h: 76px;
+  --nav-h: 88px;
+  --nav-condensed: 60px;
   --bar-h: 64px;
 }
 
@@ -128,13 +129,18 @@ body {
     color var(--theme-dur) var(--ease-in-out);
 }
 
-/* Every theme-aware surface crossfades with the page. */
-.theme-surface,
-.theme-surface * {
-  transition-property: background-color, color, border-color, fill, stroke, filter, opacity, transform;
-  transition-duration: var(--theme-dur), var(--theme-dur), var(--theme-dur), var(--theme-dur), var(--theme-dur), 300ms,
-    300ms;
-  transition-timing-function: var(--ease-in-out);
+/* Theme-aware surfaces crossfade their own background and color (children inherit, so they follow). */
+.theme-surface {
+  transition:
+    background-color var(--theme-dur) var(--ease-in-out),
+    color var(--theme-dur) var(--ease-in-out);
+}
+
+/* Night/Day morph: the whole page crossfades as one picture (View Transitions API). */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: var(--theme-dur);
+  animation-timing-function: var(--ease-in-out);
 }
 
 ::selection {
@@ -377,6 +383,13 @@ html.no-preloader .preloader {
   display: none;
 }
 
+/* Mobile menu cards snap (native touch scroll; Lenis does not smooth touch) */
+@media (max-width: 1023px) {
+  html.menu-snap {
+    scroll-snap-type: y proximity;
+  }
+}
+
 /* Mobile bottom bar spacing */
 @media (max-width: 1023px) {
   body {
@@ -460,4 +473,28 @@ html.no-preloader .preloader {
 }
 .print-only {
   display: none;
+}
+
+/* Enter animations: only hidden when JS runs (html.js), so no-JS shows everything. */
+html.js .fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 1s var(--ease-out),
+    transform 1.2s var(--ease-out);
+}
+html.js .fade-in[data-in="1"] {
+  opacity: 1;
+  transform: none;
+}
+.split-line {
+  padding-bottom: 0.06em;
+}
+
+/* Google Maps follows the theme */
+[data-theme="night"] .map-frame {
+  filter: invert(0.9) hue-rotate(185deg) saturate(0.55) brightness(0.9) contrast(0.92);
+}
+[data-theme="day"] .map-frame {
+  filter: grayscale(0.35) sepia(0.12) contrast(0.98);
 }

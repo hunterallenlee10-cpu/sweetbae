@@ -125,12 +125,11 @@ export function Nav() {
         data-theme={tone}
         className={`no-print fixed inset-x-0 top-0 z-50 text-[color:var(--fg)] transition-[background-color,box-shadow,padding,border-color] duration-500 ${
           scrolled
-            ? "border-b border-[color:var(--line-soft)] bg-[color:var(--bg)]/92 py-2 backdrop-blur-md"
-            : "border-b border-transparent bg-transparent py-4"
+            ? "border-b border-[color:var(--line-soft)] bg-[color:var(--bg)]/92 backdrop-blur-md"
+            : "border-b border-transparent bg-transparent"
         }`}
-        style={tone ? { background: "transparent" } : undefined}
       >
-        <nav aria-label="Main" className="wrap flex items-center justify-between gap-6">
+        <nav aria-label="Main" className={`wrap flex items-center justify-between gap-6 transition-[height] duration-500 ${scrolled ? "h-[calc(var(--nav-condensed)-1px)]" : "h-[var(--nav-h)]"}`}>
           <Link href="/" aria-label="Sweetbay Restaurant & Bar, home" className="shrink-0">
             <Logo className={`w-auto transition-all duration-500 ${scrolled ? "h-9" : "h-11 lg:h-12"}`} />
           </Link>
