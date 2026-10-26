@@ -38,7 +38,7 @@ export function Reviews() {
                   type="button"
                   aria-pressed={n === i}
                   onClick={() => setI(n)}
-                  className={`font-display text-[22px] transition-opacity duration-300 lg:text-[26px] ${n === i ? "opacity-100" : "opacity-[0.62] hover:opacity-90"}`}
+                  className={`font-display text-[22px] transition-colors duration-300 lg:text-[26px] ${n === i ? "text-[color:var(--fg)]" : "text-[color:var(--fg-muted)] hover:text-[color:var(--fg)]"}`}
                 >
                   <span className="tabular mr-3 font-sans text-[11px] tracking-[0.2em] text-[color:var(--accent-text)]">{String(n + 1).padStart(2, "0")}</span>
                   {rv.author}

@@ -5,8 +5,10 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { Logo } from "@/components/brand/Logo";
 import { business, micro, nav } from "@/content/site";
-import { MobileOverlay } from "./MobileOverlay";
+import dynamic from "next/dynamic";
 import { StatusChip } from "./StatusChip";
+
+const MobileOverlay = dynamic(() => import("./MobileOverlay").then((m) => m.MobileOverlay), { ssr: false });
 
 type DropdownItem = { label: string; href: string; external?: boolean };
 
@@ -96,6 +98,10 @@ export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [heroTone, setHeroTone] = useState<string | undefined>();
   const [overlay, setOverlay] = useState(false);
+  const [overlayLoaded, setOverlayLoaded] = useState(false);
+  useEffect(() => {
+    if (overlay) setOverlayLoaded(true);
+  }, [overlay]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 48);
@@ -184,7 +190,7 @@ export function Nav() {
           </button>
         </nav>
       </header>
-      <MobileOverlay open={overlay} onClose={() => setOverlay(false)} />
+      {overlayLoaded && <MobileOverlay open={overlay} onClose={() => setOverlay(false)} />}
     </>
   );
 }

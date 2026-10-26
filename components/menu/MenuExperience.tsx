@@ -1,5 +1,7 @@
 "use client";
 
+import dynamic from "next/dynamic";
+
 import Link from "next/link";
 import { AnimatePresence, LayoutGroup, motion } from "motion/react";
 import { usePathname } from "next/navigation";
@@ -9,11 +11,13 @@ import { cocktails, flightNote, foodMenus, menuNotes, type MenuKey, type Tag } f
 import { concept, micro, pages } from "@/content/site";
 import { easeOut } from "@/lib/motion";
 import { CategoryOpener } from "./CategoryOpener";
-import { DishSheet } from "./DishSheet";
 import { BeerList, WineList } from "./DrinkLists";
 import { fromCocktail, fromDish, type MenuRow, tagLabel } from "./items";
 import { ItemRow } from "./ItemRow";
 import { PlateStage } from "./PlateStage";
+
+// The sheet (and Motion drag code) loads on first open, keeping it off the critical path.
+const DishSheet = dynamic(() => import("./DishSheet").then((m) => m.DishSheet), { ssr: false });
 
 type Section = { id: string; title: string; rail: string; banner?: string; bannerAlt: string; rows: MenuRow[]; note?: string; filterable: boolean };
 

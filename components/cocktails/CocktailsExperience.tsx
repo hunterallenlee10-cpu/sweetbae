@@ -1,7 +1,8 @@
 "use client";
 
+import dynamic from "next/dynamic";
+
 import { useCallback, useEffect, useRef, useState } from "react";
-import { DishSheet } from "@/components/menu/DishSheet";
 import { BeerList, WineList } from "@/components/menu/DrinkLists";
 import { fromCocktail } from "@/components/menu/items";
 import { CategoryOpener } from "@/components/menu/CategoryOpener";
@@ -11,6 +12,9 @@ import { SplitReveal } from "@/components/ui/Reveal";
 import { cocktails, flightNote, formatPrice } from "@/content/menu";
 import { concept, copy, micro, pages } from "@/content/site";
 import { prefersReducedMotion, registerGsap } from "@/lib/motion";
+
+// The sheet (and Motion drag code) loads on first open, keeping it off the critical path.
+const DishSheet = dynamic(() => import("@/components/menu/DishSheet").then((m) => m.DishSheet), { ssr: false });
 
 const rows = cocktails.map(fromCocktail);
 
