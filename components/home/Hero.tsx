@@ -124,7 +124,8 @@ export function Hero() {
 
     let loadedFirst = false;
     let cursor = 0;
-    // Phase 1: first frame, the idle-drift frames and every 16th. Phase 2 (the rest) waits for a scroll or 3.5 s.
+    // Phase 1: first frame, the idle-drift frames and every 16th. Phase 2 (the rest) waits for the first scroll,
+    // so a visitor who never scrolls never downloads the full sequence.
     const phase1 = order.findIndex((k, idx) => idx > 0 && k % 16 !== 0 && k > IDLE_FRAMES) ;
     let limit = phase1 > 0 ? phase1 : order.length;
     let active = 0;
@@ -135,7 +136,6 @@ export function Hero() {
     };
     const onFirstScroll = () => release();
     window.addEventListener("scroll", onFirstScroll, { once: true, passive: true });
-    const releaseTimer = window.setTimeout(release, 3500);
     const loadNext = () => {
       if (disposed || cursor >= limit) return;
       active++;
@@ -202,7 +202,6 @@ export function Hero() {
       disposed = true;
       cancelAnimationFrame(raf);
       st.kill();
-      window.clearTimeout(releaseTimer);
       window.removeEventListener("scroll", onFirstScroll);
       window.removeEventListener("resize", resize);
     };
