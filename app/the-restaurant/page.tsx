@@ -18,7 +18,7 @@ export default function RestaurantPage() {
       <SetTheme theme="night" />
       <header className="wrap pb-6 pt-[calc(var(--nav-h)+56px)] lg:pt-[calc(var(--nav-h)+96px)]">
         <p className="eyebrow mb-4">Experience</p>
-        <h1 className="display-xl max-w-[12ch]">
+        <h1 className="display-xl max-w-[7em]">
           The <span className="em">Restaurant</span>
         </h1>
         <p className="body-copy mt-6">

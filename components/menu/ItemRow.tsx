@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { forwardRef } from "react";
+import { memo } from "react";
 import { MenuPicture } from "@/components/ui/MenuPicture";
 import { easeOut } from "@/lib/motion";
 import { type MenuRow, tagLabel } from "./items";
@@ -9,17 +9,18 @@ import { RollingPrice } from "./RollingPrice";
 
 type Props = {
   item: MenuRow;
+  index: number;
   dimmed: boolean;
   active: boolean;
-  onOpen: () => void;
-  onHover: () => void;
+  onOpen: (index: number) => void;
+  onHover: (id: string) => void;
 };
 
 /** Typographic menu row: Fraunces name, brass hairline leader to the price, description, tags. Mobile: 4:5 card. */
-export const ItemRow = forwardRef<HTMLLIElement, Props>(function ItemRow({ item, dimmed, active, onOpen, onHover }, ref) {
+// Memoized: only rows whose props change re-render (and re-measure their layout animation).
+export const ItemRow = memo(function ItemRow({ item, index, dimmed, active, onOpen, onHover }: Props) {
   return (
     <motion.li
-      ref={ref}
       id={item.id}
       data-id={item.id}
       layout="position"
@@ -31,9 +32,9 @@ export const ItemRow = forwardRef<HTMLLIElement, Props>(function ItemRow({ item,
     >
       <button
         type="button"
-        onClick={onOpen}
-        onMouseEnter={onHover}
-        onFocus={onHover}
+        onClick={() => onOpen(index)}
+        onMouseEnter={() => onHover(item.id)}
+        onFocus={() => onHover(item.id)}
         aria-haspopup="dialog"
         className="group block w-full py-6 text-left lg:py-7"
       >

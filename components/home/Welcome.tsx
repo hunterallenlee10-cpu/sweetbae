@@ -31,7 +31,7 @@ export function Welcome() {
           <p id="welcome-title" className="eyebrow mb-6">
             Welcome to Sweetbay
           </p>
-          <SplitReveal className="lede max-w-[34ch] text-[clamp(24px,2.5vw,38px)]">{copy.intro}</SplitReveal>
+          <SplitReveal className="lede max-w-[19em] text-[clamp(24px,2.5vw,38px)]">{copy.intro}</SplitReveal>
         </div>
         <div ref={imgRef} className="relative aspect-[4/5] overflow-hidden lg:col-span-4 lg:col-start-9">
           <Image

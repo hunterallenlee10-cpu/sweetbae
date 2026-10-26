@@ -25,13 +25,13 @@ export default function AboutPage() {
       <SetTheme theme="day" heroTone="night" />
       <section data-theme="night" className="relative flex min-h-[88svh] flex-col items-center justify-center overflow-hidden bg-[color:var(--ink)] px-[var(--gutter)] pb-20 pt-[calc(var(--nav-h)+40px)] text-center text-[color:var(--cream)]">
         <MagnoliaIcon className="w-[min(70vw,520px)] text-[color:var(--brass)]" title="The Sweetbay magnolia" />
-        <h1 className="display-xl mt-14 max-w-[16ch]">
+        <h1 className="display-xl mt-14 max-w-[9.4em]">
           About <span className="em">Sweetbay</span> Restaurant &amp; Bar
         </h1>
       </section>
 
       <section className="wrap py-24 lg:py-40">
-        <SplitReveal className="lede mx-auto max-w-[30ch] text-center text-[clamp(26px,3.2vw,48px)] leading-[1.25]">{copy.about.intro}</SplitReveal>
+        <SplitReveal className="lede mx-auto max-w-[17em] text-center text-[clamp(26px,3.2vw,48px)] leading-[1.25]">{copy.about.intro}</SplitReveal>
       </section>
 
       <section aria-labelledby="name-title" className="wrap pb-24 lg:pb-40">

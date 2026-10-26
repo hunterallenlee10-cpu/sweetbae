@@ -257,7 +257,7 @@ export function Hero() {
         <div className="wrap absolute inset-x-0 bottom-0 pb-[calc(var(--bar-h)+40px)] lg:pb-20">
           <div className={`max-w-[1100px] transition-all duration-1000 ease-[var(--ease-out)] ${final ? "opacity-100 blur-0" : "translate-y-10 opacity-0 blur-md"}`}>
             <p className="eyebrow mb-5 !text-[color:var(--brass)]">Sweetbay Restaurant &amp; Bar</p>
-            <h1 className="display-xl max-w-[13ch]">
+            <h1 className="display-xl max-w-[7.6em]">
               Discover <span className="em">Modern American</span> Dining in Leonardtown, MD
             </h1>
             <p className="mt-6 max-w-[52ch] text-[17px] leading-relaxed text-[color:var(--cream)]/85">{intro}</p>

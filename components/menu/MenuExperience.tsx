@@ -156,6 +156,7 @@ function CategoryBlock({
   const listRef = useRef<HTMLUListElement>(null);
   const activeItem = section.rows.find((r) => r.id === activeId) ?? section.rows[0];
   const matches = (r: MenuRow) => !section.filterable || filter.size === 0 || r.tags.some((t) => filter.has(t));
+  const openRow = useCallback((i: number) => onOpen(section.id, i), [onOpen, section.id]);
 
   // The row crossing the viewport center drives the stage.
   useEffect(() => {
@@ -185,14 +186,7 @@ function CategoryBlock({
           <ul ref={listRef} className="print-columns divide-y divide-[color:var(--line-soft)]">
             <AnimatePresence initial={false}>
               {section.rows.map((r, i) => (
-                <ItemRow
-                  key={r.id}
-                  item={r}
-                  dimmed={!matches(r)}
-                  active={r.id === activeItem?.id}
-                  onHover={() => setActiveId(r.id)}
-                  onOpen={() => onOpen(section.id, i)}
-                />
+                <ItemRow key={r.id} item={r} index={i} dimmed={!matches(r)} active={r.id === activeItem?.id} onHover={setActiveId} onOpen={openRow} />
               ))}
             </AnimatePresence>
           </ul>
@@ -259,11 +253,14 @@ export function MenuExperience({ initial }: { initial: MenuKey }) {
   }, []);
 
   const sheetSection = sheet ? sections.find((s) => s.id === sheet.section) : undefined;
-  const openSheet = (section: string, index: number) => {
-    setSheet({ section, index });
-    const s = sections.find((x) => x.id === section);
-    if (s) window.history.replaceState(window.history.state, "", `${location.pathname}#${s.rows[index].id}`);
-  };
+  const openSheet = useCallback(
+    (section: string, index: number) => {
+      setSheet({ section, index });
+      const s = sections.find((x) => x.id === section);
+      if (s) window.history.replaceState(window.history.state, "", `${location.pathname}#${s.rows[index].id}`);
+    },
+    [sections],
+  );
   const closeSheet = useCallback(() => {
     setSheet(null);
     window.history.replaceState(window.history.state, "", location.pathname);

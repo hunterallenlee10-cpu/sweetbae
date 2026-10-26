@@ -91,7 +91,7 @@
   --color-accent: var(--accent);
   --font-display: var(--font-fraunces), "Iowan Old Style", Georgia, serif;
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-mono: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
 /* ------------------------------------------------------------------ */

@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Footer } from "@/components/shell/Footer";
@@ -61,7 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en-US"
       data-theme="night"
       suppressHydrationWarning
-      className={`${fraunces.variable} ${GeistSans.variable} ${GeistMono.variable}`}
+      className={`${fraunces.variable} ${GeistSans.variable}`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
