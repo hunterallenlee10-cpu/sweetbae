@@ -1,4 +1,4 @@
-Content diff · 2026-10-26T02:48:07.598Z
+Content diff · 2026-10-26T02:54:09.158Z
 Checked 657 text lines, 8 external links, 3 titles.
 Missing: 0
 Present on another page (shared blocks like Contact/Hours live on Home, Contact and the footer): 10

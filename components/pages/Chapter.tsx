@@ -15,6 +15,7 @@ export function Chapter({
   blur,
   flip,
   children,
+  priority,
 }: {
   index: number;
   title: string;
@@ -25,6 +26,7 @@ export function Chapter({
   blur?: string;
   flip?: boolean;
   children?: React.ReactNode;
+  priority?: boolean;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -40,7 +42,7 @@ export function Chapter({
   return (
     <article className="grid min-h-svh items-center gap-10 py-16 lg:grid-cols-12 lg:gap-0 lg:py-24">
       <div ref={ref} className={`relative h-[62svh] overflow-hidden lg:h-[84svh] lg:col-span-7 ${flip ? "lg:order-2 lg:col-start-6" : ""}`}>
-        <Image src={img} alt={alt} fill sizes="(min-width: 1024px) 58vw, 100vw" placeholder={blur ? "blur" : "empty"} blurDataURL={blur} className="graded object-cover" />
+        <Image src={img} alt={alt} fill priority={priority} sizes="(min-width: 1024px) 58vw, 100vw" placeholder={blur ? "blur" : "empty"} blurDataURL={blur} className="graded object-cover" />
       </div>
       <div className={`px-[var(--gutter)] lg:col-span-4 lg:px-0 ${flip ? "lg:order-1 lg:col-start-1 lg:pl-[var(--gutter)]" : "lg:col-start-9 lg:pr-[var(--gutter)]"}`}>
         <p className="tabular eyebrow mb-5">Chapter 0{index}</p>

@@ -7,6 +7,7 @@ import { MapEmbed } from "./MapEmbed";
 /** Address, live hours, status, phone, map, large-party policy. Used on Home and Contact. */
 export function Visit({ headingLevel = 2, mapSrc, title = copy.contactTitle }: { headingLevel?: 1 | 2; mapSrc?: string; title?: string }) {
   const H = `h${headingLevel}` as "h1" | "h2";
+  const H2 = `h${headingLevel + 1}` as "h2" | "h3";
   return (
     <section aria-labelledby="visit-title" className="wrap py-24 lg:py-36">
       <div className="grid gap-14 lg:grid-cols-12">
@@ -41,7 +42,7 @@ export function Visit({ headingLevel = 2, mapSrc, title = copy.contactTitle }: {
         </div>
         <div className="flex flex-col gap-10 lg:col-span-6 lg:col-start-7">
           <div>
-            <h3 className="eyebrow mb-4">{hoursTitle}</h3>
+            <H2 className="eyebrow mb-4">{hoursTitle}</H2>
             <HoursTable />
           </div>
           <MapEmbed src={mapSrc} className="aspect-[4/3] w-full" />

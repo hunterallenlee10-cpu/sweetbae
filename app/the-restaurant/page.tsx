@@ -26,6 +26,7 @@ export default function RestaurantPage() {
         </p>
       </header>
       <Chapter
+        priority
         index={1}
         title={e.dining.title}
         body={e.dining.body}

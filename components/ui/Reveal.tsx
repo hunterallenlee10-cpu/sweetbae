@@ -21,6 +21,8 @@ export function SplitReveal({
   useEffect(() => {
     const el = ref.current;
     if (!el || prefersReducedMotion()) return;
+    // Text already on screen at load stays put: hiding it would delay the first meaningful paint.
+    if (!scrub && el.getBoundingClientRect().top < window.innerHeight * 0.9) return;
     const { gsap, SplitText } = registerGsap();
     let split: InstanceType<typeof SplitText> | undefined;
     let tween: gsap.core.Tween | undefined;

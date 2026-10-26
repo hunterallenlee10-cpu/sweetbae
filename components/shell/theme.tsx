@@ -16,7 +16,7 @@ export const routeThemes: Record<string, Theme> = {
   "/contact-us": "day",
 };
 
-export const themeBootScript = `(function(){try{var m=${JSON.stringify(routeThemes)};var p=location.pathname.replace(/\\/$/,'')||'/';var d=document.documentElement;d.classList.add('js');d.dataset.theme=m[p]||'night';var r=matchMedia('(prefers-reduced-motion: reduce)').matches;if(r||sessionStorage.getItem('sb-pre'))d.classList.add('no-preloader');sessionStorage.setItem('sb-pre','1')}catch(e){}})();`;
+export const themeBootScript = `(function(){try{var m=${JSON.stringify(routeThemes)};var p=location.pathname.replace(/\\/$/,'')||'/';var d=document.documentElement;d.classList.add('js');d.dataset.theme=m[p]||'night';var r=matchMedia('(prefers-reduced-motion: reduce)').matches;if(r||innerWidth<1024||sessionStorage.getItem('sb-pre'))d.classList.add('no-preloader');sessionStorage.setItem('sb-pre','1')}catch(e){}})();`;
 
 type Ctx = { theme: Theme; setTheme: (t: Theme) => void };
 const ThemeContext = createContext<Ctx>({ theme: "night", setTheme: () => {} });

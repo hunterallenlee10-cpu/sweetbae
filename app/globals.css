@@ -362,6 +362,12 @@ canvas {
 html.no-preloader .preloader {
   display: none;
 }
+/* Phones skip the preloader: content first on small screens and slow networks. */
+@media (max-width: 1023px) {
+  .preloader {
+    display: none;
+  }
+}
 @keyframes preloader-out {
   to {
     clip-path: inset(0 0 100% 0);

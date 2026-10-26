@@ -1,7 +1,7 @@
 import { ICON_PATH, ICON_VIEWBOX } from "@/components/brand/paths";
 
 /**
- * First visit only (the head script adds .no-preloader on repeat visits and under reduced motion).
+ * First visit on desktop only (the head script adds .no-preloader on repeat visits, on phones and under reduced motion).
  * Pure CSS: the magnolia strokes draw in cream, a brass counter runs 0 to 100, then a curtain wipe.
  * Total about 1.05s (brief max 1.4s). Hidden without JS via the same CSS timeline, so it can never block the page.
  */
