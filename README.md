@@ -19,7 +19,9 @@ GSAP + ScrollTrigger + SplitText, Lenis and Motion. Every page is statically gen
   mode sets `noindex`; with `NEXT_PUBLIC_CONCEPT=false` SEO is 100. Performance 81–93 with applied 4G throttling
   (LCP 1.9–2.2 s on most pages, 3.3 s on the menus, CLS ≤ 0.01) and 70–91 under Lighthouse's simulated model, which
   varies run to run here. Remaining cost is the motion stack (GSAP, Motion, Lenis) and the Fraunces web font.
-- Higgsfield: 182 credits used (plan 164, ceiling 205). Rejected takes and why are in `higgsfield/rejected/` locally.
+- Higgsfield: 182 credits used (plan 164, ceiling 205). Redone for accuracy: Espresso Martini (unlisted coffee beans),
+  Sweet and Spicy Shrimp (unlisted side sauce), dinner Chicken Piccata (unlisted lemon slices), Oysters Cargot loop
+  (plate rotated), plus one failed Oysters still. Source URLs for every kept output are in `higgsfield/results.json`.
 
 ## Run it
 
