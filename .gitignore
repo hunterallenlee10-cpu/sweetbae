@@ -9,3 +9,7 @@ next-env.d.ts
 /higgsfield/raw/*.tmp
 /qa/out
 .DS_Store
+.frames-tmp
+# Raw Higgsfield outputs stay out of git; scripts/fetch-results.mjs re-downloads them from higgsfield/results.json
+/higgsfield/raw/
+/higgsfield/rejected/

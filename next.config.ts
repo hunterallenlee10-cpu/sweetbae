@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      { source: "/dinner", destination: "/menus/dinner", permanent: true },
-      { source: "/lunch", destination: "/menus/lunch", permanent: true },
+      { source: "/dinner", destination: "/menus/dinner", statusCode: 301 },
+      { source: "/lunch", destination: "/menus/lunch", statusCode: 301 },
       // TODO(hunter): /menus/dessert has no published items on the live site. Redirected until a dessert list exists.
       { source: "/menus/dessert", destination: "/menus/dinner", permanent: false },
     ];
